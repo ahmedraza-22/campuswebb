@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Join the Campus student community.">
+    <title>Create an account — Campus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div id="site-header"></div>
+    <main class="auth-page wrap">
+      <section class="auth-aside signup-aside"><span class="eyebrow"><span class="status-dot"></span> YOUR PLACE IN THE COMMUNITY</span><h1>There’s room<br>for <span>your ideas.</span></h1><p>Keep up with campus life, meet what your fellow students are making, and add your voice to the mix.</p><span class="auth-doodle" aria-hidden="true">✳</span></section>
+      <section class="auth-card"><span class="eyebrow">MAKE YOURSELF AT HOME</span><h2>Create your account.</h2><p class="auth-subtitle">A few details and you’re in.</p><div class="demo-note"><span aria-hidden="true">ⓘ</span> Demo only — your profile stays in this browser.</div><form id="signup-form" class="auth-form"><label for="signup-name">Your name</label><input id="signup-name" name="name" type="text" autocomplete="name" minlength="2" maxlength="50" placeholder="What should we call you?" required><label for="signup-email">University email</label><input id="signup-email" name="email" type="email" autocomplete="email" placeholder="you@university.edu" required><label for="signup-password">Create a password</label><input id="signup-password" name="password" type="password" autocomplete="new-password" minlength="6" placeholder="At least 6 characters" required><button class="button button-dark form-submit" type="submit">Join the community <span aria-hidden="true">↗</span></button><p id="signup-feedback" class="form-feedback" aria-live="polite"></p></form><p class="auth-switch">Already have an account? <a href="login.html">Sign in <span aria-hidden="true">→</span></a></p></section>
+    </main>
+    <div id="site-footer"></div>
+  </body>
+</html>

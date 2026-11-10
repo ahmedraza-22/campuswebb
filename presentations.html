@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Discover student projects and presentations, or share your own.">
+    <title>Student presentations — Campus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div id="site-header"></div>
+    <main class="wrap inner-page">
+      <section class="page-intro"><span class="eyebrow"><span class="status-dot"></span> STUDENT WORK, OUT IN THE WORLD</span><h1>Ideas worth<br><span>passing on.</span></h1><p>Meet the projects your fellow students are excited about. Have something to share? This is your space, too.</p><a class="button button-dark intro-button" href="#share-work">Share your presentation <span aria-hidden="true">↓</span></a></section>
+      <section class="presentation-section"><div class="section-heading compact-heading"><div><span class="eyebrow">FROM OUR STUDENT COMMUNITY</span><h2>Curiosity looks<br>good on you.</h2></div><p>Projects shared by students, for students. Get inspired, start a conversation, or add your own.</p></div><div id="presentation-list" class="presentation-grid" aria-live="polite"></div></section>
+      <section id="share-work" class="share-panel"><div class="share-panel-copy"><span class="eyebrow">YOUR TURN</span><h2>Made something<br>you’re proud of?</h2><p>Add your presentation to the student showcase. Keep it kind, relevant, and yours.</p><div class="demo-note"><span aria-hidden="true">ⓘ</span> This demo saves submissions only in this browser. Don’t include private information.</div></div><form id="presentation-form" class="form-card"><label for="presentation-title">Presentation title</label><input id="presentation-title" name="title" type="text" maxlength="90" placeholder="What did you make?" required><div class="form-row"><div><label for="presentation-course">Course or subject</label><input id="presentation-course" name="course" type="text" maxlength="60" placeholder="e.g. Environmental Science" required></div><div><label for="presentation-author">Your name</label><input id="presentation-author" name="author" type="text" maxlength="50" placeholder="How should we credit you?" required></div></div><label for="presentation-description">A few words about it</label><textarea id="presentation-description" name="description" rows="4" maxlength="240" placeholder="What might other students find interesting?" required></textarea><label for="presentation-link">Link to your work <span class="optional">(optional)</span></label><input id="presentation-link" name="url" type="url" placeholder="https://…"><button class="button button-dark form-submit" type="submit">Share presentation <span aria-hidden="true">↗</span></button><p id="presentation-feedback" class="form-feedback" aria-live="polite"></p></form></section>
+    </main>
+    <div id="site-footer"></div>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sign in to your Campus student account.">
+    <title>Sign in — Campus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div id="site-header"></div>
+    <main class="auth-page wrap">
+      <section class="auth-aside"><span class="eyebrow"><span class="status-dot"></span> GOOD TO HAVE YOU BACK</span><h1>Your campus<br>is right <span>here.</span></h1><p>Pick up where you left off. The latest updates and student ideas are just around the corner.</p><span class="auth-doodle" aria-hidden="true">✳</span></section>
+      <section class="auth-card"><span class="eyebrow">WELCOME BACK</span><h2>Sign in to Campus.</h2><p class="auth-subtitle">Use any email and password to try this local demo.</p><div class="demo-note"><span aria-hidden="true">ⓘ</span> Demo only — no password is saved or sent anywhere.</div><form id="login-form" class="auth-form"><label for="login-email">Email address</label><input id="login-email" name="email" type="email" autocomplete="email" placeholder="you@university.edu" required><label for="login-password">Password</label><input id="login-password" name="password" type="password" autocomplete="current-password" minlength="6" placeholder="At least 6 characters" required><button class="button button-dark form-submit" type="submit">Sign in <span aria-hidden="true">↗</span></button><p id="login-feedback" class="form-feedback" aria-live="polite"></p></form><p class="auth-switch">New around here? <a href="signup.html">Create an account <span aria-hidden="true">→</span></a></p></section>
+    </main>
+    <div id="site-footer"></div>
+  </body>
+</html>
